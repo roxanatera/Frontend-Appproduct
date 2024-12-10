@@ -17,7 +17,7 @@ const ProductForm: React.FC = () => {
       // Si estamos en modo edición, cargamos el producto
       const fetchProduct = async () => {
         try {
-          const response = await api.get(`/products/${id}`);
+          const response = await api.get(`/api/products/${id}`);
           setProduct(response.data);
         } catch (error) {
           console.error('Error fetching product:', error);
@@ -47,10 +47,10 @@ const ProductForm: React.FC = () => {
     try {
       if (id) {
         // Modo edición
-        await api.put(`/products/${id}`, product);
+        await api.put(`/api/products/${id}`, product);
       } else {
         // Modo creación
-        await api.post('/products', product);
+        await api.post('/api/products', product);
       }
       navigate('/');
     } catch (error) {

@@ -12,7 +12,7 @@ const ProductList: React.FC = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await api.get<Product[]>('/products');
+        const response = await api.get<Product[]>('/api/products');
         setProducts(response.data);
       } catch (error) {
         console.error('Error fetching products:', error);
@@ -25,7 +25,7 @@ const ProductList: React.FC = () => {
   const handleDelete = async () => {
     if (!selectedProduct) return;
     try {
-      await api.delete(`/products/${selectedProduct}`);
+      await api.delete(`/api/products/${selectedProduct}`);
       setProducts((prevProducts) =>
         prevProducts.filter((product) => product._id !== selectedProduct)
       );
