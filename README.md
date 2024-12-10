@@ -1,50 +1,35 @@
-# React + TypeScript + Vite
+# **Product Admin App - Frontend**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este repositorio contiene el **frontend** de la **Product Admin App**, una aplicación web que permite a los usuarios administrar productos mediante una interfaz sencilla y moderna. El frontend está construido con **React**, **TypeScript**, **Tailwind CSS**, y se comunica con un backend para realizar operaciones CRUD sobre los productos.
 
-Currently, two official plugins are available:
+## **Descripción**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+La **Product Admin App - Frontend** es una aplicación de administración de productos que permite a los usuarios realizar las siguientes operaciones:
+- **Ver productos**: Listar todos los productos disponibles.
+- **Agregar productos**: Crear nuevos productos mediante un formulario sencillo.
+- **Editar productos**: Actualizar los detalles de productos existentes.
+- **Eliminar productos**: Eliminar productos de la base de datos.
 
-## Expanding the ESLint configuration
+Este proyecto se conecta a un backend desarrollado con **Node.js** y **MongoDB** para manejar las operaciones CRUD, y usa **Axios** para hacer las solicitudes HTTP a la API.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### **Características**:
+- **Interfaz moderna**: Desarrollada con **React** y **TypeScript** para garantizar un código seguro y escalable.
+- **Diseño responsivo**: Utiliza **Tailwind CSS** para crear un diseño completamente adaptable a dispositivos móviles.
+- **Conexión con el backend**: Realiza operaciones CRUD a través de una API RESTful.
+- **Formulario de validación**: Asegura que los productos sean creados con los campos requeridos.
+- **Confirmaciones modales**: Utiliza modales para confirmar la eliminación de productos.
 
-- Configure the top-level `parserOptions` property like this:
+## **Tecnologías Utilizadas**
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **React**: Framework JavaScript para construir la interfaz de usuario.
+- **TypeScript**: Para asegurar un desarrollo robusto y un sistema de tipos que reduce los errores durante el desarrollo.
+- **Tailwind CSS**: Utilizado para un diseño limpio, moderno y completamente responsivo.
+- **Axios**: Para hacer las solicitudes HTTP hacia el backend y realizar las operaciones CRUD.
+- **React Router**: Para manejar la navegación dentro de la aplicación.
+- **React Hooks**: Para gestionar el estado de los productos y las interacciones con la UI.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+
+
+
