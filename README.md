@@ -1,8 +1,5 @@
 # **Product Admin App - Frontend**
 
-<<<<<<< HEAD
-# Product Admin App - Frontend
-
 **Product Admin App** es una aplicación de gestión de productos con una interfaz intuitiva, construida con **React**, **Vite**, **Tailwind CSS** y **Axios** para interactuar con el backend. Esta aplicación permite realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) en productos a través de una API.
 
 ## Descripción
