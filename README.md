@@ -1,5 +1,42 @@
 # React + TypeScript + Vite
 
+# Product Admin App - Frontend
+
+**Product Admin App** es una aplicación de gestión de productos con una interfaz intuitiva, construida con **React**, **Vite**, **Tailwind CSS** y **Axios** para interactuar con el backend. Esta aplicación permite realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) en productos a través de una API.
+
+## Descripción
+
+La aplicación se comunica con una API RESTful desplegada en **Render** para gestionar un catálogo de productos. Los usuarios pueden agregar nuevos productos, editar los existentes, eliminar productos y visualizar el listado completo.
+
+## Tecnologías Utilizadas
+
+- **React**: Biblioteca de JavaScript para construir interfaces de usuario dinámicas.
+- **Vite**: Herramienta de construcción rápida para aplicaciones modernas en frontend.
+- **Tailwind CSS**: Framework CSS de utilidad para diseños rápidos y responsivos.
+- **Axios**: Cliente HTTP para realizar solicitudes a la API backend.
+- **React Router**: Para la navegación entre páginas.
+- **Environment Variables**: Uso de variables de entorno con Vite para gestionar configuraciones como la URL de la API.
+
+## Características
+
+- **Interfaz limpia y moderna** utilizando **Tailwind CSS**.
+- **Operaciones CRUD** para gestionar productos.
+- **Responsividad**: diseño completamente adaptado a dispositivos móviles.
+- **Conexión con API**: comunicación con una API RESTful para gestionar productos.
+
+## Enlace al Proyecto
+
+- **Frontend** desplegado en [Netlify](https://adminproducts-app.netlify.app).
+- **Repositorio GitHub**: [Frontend App](https://github.com/roxanatera/Frontend-Appproduct).
+
+## Instrucciones de Instalación
+
+1. Clona este repositorio:
+   ```bash
+   git clone https://github.com/roxanatera/Frontend-Appproduct.git
+
+
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
